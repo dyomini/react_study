@@ -1,0 +1,14 @@
+{
+  "name": "SW 마에스트로",
+  "version": "1.0.0",
+  "description": "프론트엔드 지원자 테스트 문항",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}

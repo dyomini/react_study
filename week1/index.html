@@ -1,0 +1,217 @@
+<!-- 본 파일은 절대로 수정하지 않습니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>항공편 검색 및 예매 사이트 구축</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/problem_1.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__title"><h1>항공편 검색 및 예매 사이트 구축</h1></div>
+      <ul class="navbar__list">
+        <li class="navbar__item selected">
+          <a href="./index.html" class="navbar__link active" id="link1"
+            >문제 1번</a
+          >
+        </li>
+        <li class="navbar__item">
+          <a href="./pages/problem_2.html" class="navbar__link" id="link2"
+            >문제 2번</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="header">
+        <div class="header__right">
+          <h1>SWM AIR</h1>
+          <ul class="header__list">
+            <li class="header__item">
+              <div>예약</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+            <li class="header__item">
+              <div>공항</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+            <li class="header__item">
+              <div>기내</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="header__left">
+          <select disabled>
+            <option>🇰🇷 KR</option>
+            <option>🇺🇸 EN</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="section __flex">
+          <div class="ways way__types __flex">
+            <div class="input">
+              <input type="radio" name="way" value="oneWay" />편도
+            </div>
+            <div class="input">
+              <input type="radio" name="way" value="roundTrip" disabled />왕복
+            </div>
+          </div>
+          <div class="ways way__opts">
+            <div class="input">
+              <input type="checkbox" disabled />직항만 보기
+            </div>
+          </div>
+        </div>
+        <div class="__flex">
+          <div class="section">
+            <div class="descript">출발지 & 도착지</div>
+            <div class="search">
+              <select id="from">
+                <option value="FROM">FROM</option>
+                <option value="ICN">ICN</option>
+                <option value="HND">HND</option>
+                <option value="MNL">MNL</option>
+              </select>
+              <button id="swapButton" disabled>SWAP</button>
+              <select id="to">
+                <option value="TO">TO</option>
+                <option value="ICN">ICN</option>
+                <option value="HND">HND</option>
+                <option value="MNL">MNL</option>
+              </select>
+            </div>
+          </div>
+          <div class="section">
+            <div class="descript">가는날</div>
+            <div class="select__date">
+              <input type="date" name="depart" id="departDate" />
+            </div>
+          </div>
+        </div>
+        <div class="__flex">
+          <div class="section">
+            <div class="descript">승객수</div>
+            <div class="search">
+              <div class="passenger-type">
+                <div class="descript__small">성인</div>
+                <div class="count-box" id="adult">
+                  <button class="button__adult" id="minus">-</button>
+                  <input value="1" id="numOfAdult" />
+                  <button class="button__adult" id="plus">+</button>
+                </div>
+              </div>
+              <div class="passenger-type">
+                <div>유아</div>
+                <div class="count-box" id="child">
+                  <button>-</button>
+                  <input value="1" disabled />
+                  <button>+</button>
+                </div>
+              </div>
+              <div class="passenger-type">
+                <div>소아</div>
+                <div class="count-box" id="infant">
+                  <button>-</button>
+                  <input value="1" disabled />
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="descript">좌석타입</div>
+            <div class="select__seated">
+              <button id="all">전체</button>
+              <button id="economy">일반석</button>
+              <button id="business">비즈니스석</button>
+              <button id="first">일등석</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-btn-container">
+        <button id="searchFlight">항공편 검색하기</button>
+      </div>
+      <div class="results-container __flex">
+        <div class="results">
+          <div class="results__header">
+            <h2>검색 결과</h2>
+            <select id="sortType">
+              <option>잔여 좌석 순</option>
+              <option>출발일 순</option>
+            </select>
+          </div>
+          <p class="results__guide">검색 결과가 없습니다.</p>
+          <ul class="tickets__list"></ul>
+        </div>
+        <div class="carts">
+          <h2>저장소</h2>
+          <p class="results__guide">저장된 항목이 없습니다.</p>
+          <ul class="carts__list"></ul>
+        </div>
+      </div>
+    </main>
+    <script>
+      // 본 파일은 절대로 수정하지 않습니다.
+      window.onload = function () {
+        const currentUrl = window.location.href;
+
+        if (currentUrl.includes("web")) {
+          const link1 = document.querySelector("#link1");
+          link1.href = `./`;
+
+          const link2 = document.querySelector("#link2");
+          link2.href = `./web/pages/problem_2.html`;
+        }
+      };
+    </script>
+    <script type="module" src="./scripts/problem_1.js"></script>
+  </body>
+</html>

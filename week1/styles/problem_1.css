@@ -1,0 +1,262 @@
+/* 본 파일은 절대로 수정하지 않습니다. */
+
+.search-container {
+  padding: 1.5em;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  width: 86%;
+}
+
+.results-container {
+  padding: 1.5em;
+  width: 88%;
+}
+
+.section {
+  margin: 10px 50px;
+  padding: 1em;
+}
+
+.section > .way__types {
+  width: 150px;
+}
+
+.ways > .input {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ways > .input > input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.descript {
+  font-size: 18px;
+  width: 120px;
+  text-align: justify;
+  word-spacing: 2px;
+  letter-spacing: 200%;
+  margin-bottom: 20px;
+}
+
+.search,
+.select__date {
+  display: flex;
+}
+
+.search > select {
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
+  margin-right: 30px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.search > button {
+  background: none;
+  margin-right: 30px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.search > button:disabled {
+  cursor: default;
+}
+
+.select__date,
+.select__seated {
+  width: 400px;
+}
+
+.select__date > input {
+  width: 150px;
+  font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.search > .passenger-type {
+  margin-right: 30px;
+}
+
+.passenger-type > div {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.count-box {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-box > input {
+  width: 35px;
+  text-align: center;
+}
+
+.count-box > button {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: #fff;
+}
+
+.count-box#adult > button {
+  cursor: pointer;
+}
+
+.count-box > input {
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+}
+
+.select__seated {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.select__seated > button {
+  width: 22%;
+  font-size: 15px;
+  padding: 0.5rem;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.select__seated > button:hover {
+  border: 1px solid #0076b1;
+}
+
+.select__seated > button.selected {
+  border: 1px solid #0076b1;
+}
+
+.search-btn-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  background: none;
+}
+
+.search-btn-container > button {
+  width: 200px;
+  font-size: 18px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.results,
+.carts {
+  width: 45%;
+  margin: 10px 10px;
+}
+
+.results__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.carts > h2 {
+  margin-bottom: 26px;
+}
+
+.results__header > select {
+  font-size: 13px;
+  width: 120px;
+}
+
+select {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.tickets__list,
+.carts__list {
+  margin: 10px 0px;
+}
+
+.tickets__items {
+  width: 86%;
+  text-align: center;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.tickets__items > .items {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.item > .item__time {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.item > .item__airport {
+  margin-top: 5px;
+  color: darkgray;
+}
+
+.tickets__items > button {
+  width: 20%;
+  font-size: 15px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.__flex {
+  display: flex;
+  justify-content: space-between;
+}

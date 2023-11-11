@@ -1,0 +1,173 @@
+/* 본 파일은 절대로 수정하지 않습니다. */
+
+.container {
+  width: 86%;
+  padding: 0.8em;
+  margin-bottom: 50px;
+}
+
+.container.__flights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+
+.container.__passengers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.__flex {
+  display: flex;
+  align-items: center;
+}
+
+.section__flights {
+  margin: 10px 50px;
+  padding: 1em;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.items__flights {
+  width: 30%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.items__flights > div > .item__time {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.items__flights > div > .item__airport {
+  margin-top: 5px;
+  color: darkgray;
+}
+
+.items__passengers {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.items__passengers > .item__select {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.item__select > select {
+  margin-left: 10px;
+  font-size: 18px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.section__inputs {
+  width: 70%;
+}
+
+.section__amount {
+  width: 25%;
+}
+
+.section__inputs > button {
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.form__list {
+  width: 55%;
+}
+
+.form__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form__item {
+  width: 90%;
+  padding: 0.8rem;
+  justify-content: space-between;
+}
+
+.form__item > div > input {
+  width: 90%;
+  font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.item__title {
+  font-size: 15px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.item__currency > select {
+  font-size: 15px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 20px;
+}
+
+.item__price {
+  font-size: 20px;
+}
+
+.items__discounts > input {
+  font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.items__discounts > button {
+  font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.item__input.__discount {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.items__form {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.items__amounts,
+.items__discounts {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}

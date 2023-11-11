@@ -1,0 +1,107 @@
+/* 본 파일은 절대로 수정하지 않습니다. */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  height: 110px;
+  background-color: navy;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+
+.navbar__title {
+  margin: 30px 30px;
+}
+
+.navbar__list {
+  height: 90px;
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.navbar__item {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__item.selected {
+  background-color: white;
+}
+
+.navbar__link {
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0px 15px;
+}
+
+.navbar__link.active {
+  color: #66f;
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.header {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.header__right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left > select {
+  font-size: 15px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.header__list {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.header__item {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+}

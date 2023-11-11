@@ -1,0 +1,200 @@
+<!-- 본 파일은 절대로 수정하지 않습니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>항공편 검색 및 예매 사이트 구축</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/problem_2.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__title"><h1>항공편 검색 및 예매 사이트 구축</h1></div>
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="./../index.html" class="navbar__link" id="link1">문제 1번</a>
+        </li>
+        <li class="navbar__item selected">
+          <a href="./problem_2.html" class="navbar__link active" id="link2"
+            >문제 2번</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="header">
+        <div class="header__right">
+          <h1>SWM AIR</h1>
+          <ul class="header__list">
+            <li class="header__item">
+              <div>예약</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+            <li class="header__item">
+              <div>공항</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+            <li class="header__item">
+              <div>기내</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                style="width: 18px; height: 18px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="header__left">
+          <select disabled>
+            <option>🇰🇷 KR</option>
+            <option>🇺🇸 EN</option>
+          </select>
+        </div>
+      </div>
+      <div class="container __flights">
+        <div class="section__flights">
+          <div class="items__flights __flex">
+            <div>
+              <div class="item__time">12:50</div>
+              <div class="item__airport">ICN</div>
+            </div>
+            <div>
+              <div class="item__flightTime">2시간 20분</div>
+              <div>&#8640;</div>
+            </div>
+            <div>
+              <div class="item__time">14:00</div>
+              <div class="item__airport">HND</div>
+            </div>
+          </div>
+          <div class="items__passengers __flex">
+            <div class="item__select">
+              성인
+              <select id="numOfAdult">
+                <option>1</option>
+                <option>2</option>
+              </select>
+              명
+            </div>
+            <div class="item__select">
+              소아
+              <select id="numOfChild">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              명
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container __passengers">
+        <div class="section__inputs">
+          <h2>탑승객 정보</h2>
+          <div class="items__form __flex">
+            <ul class="form__list">
+              <li class="form__items">
+                <div class="form__item __flex">
+                  <div>
+                    <div class="item__title">영문 이름</div>
+                    <input class="item__input" data-type="firstname" />
+                  </div>
+                  <div>
+                    <div class="item__title">영문 성</div>
+                    <input class="item__input" data-type="lastname" />
+                  </div>
+                </div>
+                <div class="form__item __flex">
+                  <div>
+                    <div class="item__title">생년월일(YYYY.MM.DD.)</div>
+                    <input class="item__input" data-type="birth" />
+                  </div>
+                  <div>
+                    <div class="item__title">여권 번호</div>
+                    <input class="item__input" data-type="passport" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section__amount">
+          <h2>항공 운송료 총액</h2>
+          <div class="items__amounts __flex">
+            <div class="item__currency __flex">
+              <select id="currency">
+                <option id="won" value="won">₩ (KRW)</option>
+                <option id="yen" value="yen">¥ (JPY)</option>
+                <option id="dollar" value="dollar">$ (USD)</option>
+              </select>
+              <div class="item__price __flex">
+                <div id="price">55000</div>
+                <div id="unit">원</div>
+              </div>
+            </div>
+          </div>
+          <div class="items__discounts">
+            <h3>할인 코드 입력</h3>
+            <input class="item__input __discount" id="discountCode" />
+            <button id="checkDiscount">적용</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // 본 파일은 절대로 수정하지 않습니다.
+      window.onload = function () {
+        const currentUrl = window.location.href;
+
+        if (currentUrl.includes("web")) {
+          const link1 = document.querySelector("#link1");
+          link1.href = `../`;
+
+          const link2 = document.querySelector("#link2");
+          link2.href = `../web/pages/problem_2.html`;
+        }
+      };
+    </script>
+    <script type="module" src="../scripts/problem_2.js"></script>
+  </body>
+</html>
